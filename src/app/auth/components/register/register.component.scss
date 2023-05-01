@@ -1,0 +1,47 @@
+:root{
+    --green: #5CB85C;
+}
+.sign-up-title{
+    a{
+        color: var(--green);
+        font-size: 17px;
+    }
+}
+.sign-up-form{
+    max-width: 550px;
+    width: 100%;
+    margin-top: 20px;
+    form{
+        width: 100%;
+        input{
+            padding: 10px 20px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            font-size: 18px;
+            outline: none;
+            &:focus{
+                border: 1px solid #66afe9;
+            }
+            &::placeholder{
+                color: #ccc;
+            }
+        }
+        div{
+            display: flex;
+            justify-content: flex-end;
+            button{
+                width: 110px;
+                padding: 10px 15px;
+                border-radius: 6px;
+                background-color: var(--green);
+                color: #FFFFFF;
+                font-size: 18px;
+                font-weight: 500;
+                border: none;
+                margin-top: 10px;
+                outline: none;
+            }
+        }
+    }
+}

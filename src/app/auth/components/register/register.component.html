@@ -1,0 +1,19 @@
+<div class="container d-flex align-items-center flex-column">
+    <div class="sign-up-title">
+        <h2>Sign up</h2>
+        <a [routerLink]="['/login']">Have an account?</a>
+    </div>
+    <div class="sign-up-form d-flex flex-column align-items-center">
+        <ul>
+            <!-- <li *ngIf="registerForm.get('username')?.errors['required']">email is not correct format</li> -->
+        </ul>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="d-flex flex-column">
+            <input formControlName="username" type="text" placeholder="Username">
+            <input formControlName="email" type="email" placeholder="Email">
+            <input formControlName="password" type="password" placeholder="Password">
+            <div>
+                <button type="submit">Sign up</button>
+            </div>
+        </form>
+    </div>
+</div>
